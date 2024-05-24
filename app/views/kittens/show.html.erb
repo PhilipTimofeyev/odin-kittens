@@ -1,1 +1,18 @@
-<%= @kitten %>
+<h1> Kitten Info </h1>
+
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Cuteness</th>
+      <th>Softness</th>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= @kitten.name %></td>
+          <td><%= @kitten.age %></td>
+          <td><%= @kitten.cuteness %></td>
+          <td><%= @kitten.softness %></td>
+        </tr>
+    </tbody>
+  </table>
