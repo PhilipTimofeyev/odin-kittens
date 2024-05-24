@@ -1,3 +1,26 @@
 <% @kittens.map do |kitten| %>
-	<%= kitten %>
+	<h3> <%= kitten.name %> </h3>
+	<table>
+	  <thead>
+	    <th>Name</th>
+	    <th>Age</th>
+	    <th>Cuteness</th>
+	    <th>Softness</th>
+	  </thead>
+	  <tbody>
+	      <tr>
+	        <td><%= kitten.name %></td>
+	        <td><%= kitten.age %></td>
+	        <td><%= kitten.cuteness %></td>
+	        <td><%= kitten.softness %></td>
+	      </tr>
+	  </tbody>
+	</table>
+	<ul>
+	  <li><%= link_to "Edit", edit_kitten_path(kitten) %></li>
+	  <li><%= link_to "Destroy", kitten_path(kitten), data: {
+	                    turbo_method: :delete,
+	                    turbo_confirm: "Are you sure?"
+	                  } %></li>
+	</ul>
 <% end %>
