@@ -20,6 +20,10 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'rest-client', '~> 2.1'
+
+gem 'mime-types', '~> 3.5', '>= 3.5.2'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
