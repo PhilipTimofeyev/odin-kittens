@@ -1,7 +1,9 @@
 <h1>Update Kitten</h1>
 
+<div class="notice"><%= flash[:failure] %></div>
+
 <%= render "form", kitten: @kitten %>
-<li><%= link_to "Destroy", kitten_path(@kitten), data: {
+<li><%= link_to "Delete", kitten_path(@kitten), data: {
                   turbo_method: :delete,
                   turbo_confirm: "Are you sure?"
                 } %></li>
